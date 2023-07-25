@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+<!--  SELETORES PERSONALIZADOS
+    #    = id
+    :    = pseudo class
+    ::   = pseudo element
+    >    = clidren
+    .    = class
+ -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+         color: red;
+         text-decoration: none;
+         font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: "[link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositorios GitHub</a></li>
+        <li><a href="https://music.youtube.com/search?q=não+importa+o+que+eu+tô+fazendo">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-03-pseudo-classes-em-css/">Site do Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>
